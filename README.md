@@ -8,12 +8,14 @@ We value your time, and ask that you spend no more than **2 hours** on this exer
 
 ## General Requirements
 
-* The service should identify objects by their content. This means that two objects with the same content should be considered identical, and only one such object should be stored per repository.
+* The service should identify objects by their content. This means that two objects with the same content should be considered identical, and only one such object should be stored per repository. 
+  =>solving this by hashing each object's content and saving hash as oid
 * Two objects with the same content that are in separate repositories should be stored separately.
 * The included tests should pass and should not be modified.
 * Do not move or rename any of the existing files.
 * The service must implement the API as described below.
 * The data can be persisted in memory, on disk, or wherever you like.
+  => I am using database.json. it needs to be initialized with an empty pair of brackets
 * Prefer using the standard library over external dependencies. If you must include an external dependency, please explain your choice in the pull request.
 
 ## Recommendations
